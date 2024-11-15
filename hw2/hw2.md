@@ -47,15 +47,15 @@
      ```
    3.  Запуск и построение графика
 
-     ```bash
-        cat gen_cds.fasta gen_trna.fasta > gen_sample.cds
-        cat ref_cds.fasta ref_trna.fasta > ref.cds
-        python -m jcvi.compara.catalog ortholog ref gen_sample --no_strip_names
-        python -m jcvi.compara.synteny screen --minspan=30 --simple ref.gen_sample.anchors ref.gen_sample.anchors.new 
-        python -m jcvi.graphics.karyotype seqids layout
-     ```
+ ```bash
+         сat gen_cds.fasta gen_trna.fasta > gen_sample.cds
+         сat ref_cds.fasta ref_trna.fasta > ref.cds
+         python -m jcvi.compara.catalog ortholog ref gen_sample --no_strip_names
+         python -m jcvi.compara.synteny screen --minspan=30 --simple ref.gen_sample.anchors ref.gen_sample.anchors.new 
+         python -m jcvi.graphics.karyotype seqids layout         
+   ```
      
-  ![out.delta](https://github.com/kagayaku29/comparativeGenomics/blob/main/hw2/karyotype.pdf)
+  ![karyotype.pdf](https://github.com/kagayaku29/comparativeGenomics/blob/main/hw2/karyotype.pdf)
 
   
 
