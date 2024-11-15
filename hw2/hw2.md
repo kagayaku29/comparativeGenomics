@@ -19,6 +19,6 @@
   gnuplot -e "set terminal png; set output 'out_fplot.png'; plot 'out.fplot' with lines"
   '''
 
-  [out.delta](C:/Users/kagayaku/Desktop/comparativeGenomics/hw2/out_fplot.png)
+  ![out.delta](C:/Users/kagayaku/Desktop/comparativeGenomics/hw2/out_fplot.png)
 
   
