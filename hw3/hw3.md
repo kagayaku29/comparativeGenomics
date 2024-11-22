@@ -55,7 +55,7 @@ JupiterPlot использовался для визуализации хром�
    ```bash
      BuildDatabase -name db_gen gen.fna
      RepeatModeler -database db_gen -threads 4 -LTRStruct
-     RepeatMasker -lib /home/abaranova/hw/hw3/RM_992729.FriNov151719222024/round-4 -pa 4 -s -xsmall -e ncbi gen.fna
+     RepeatMasker -lib /home/abaranova/hw/hw3/RM_992729.FriNov151719222024/consensi.fa  -a -pa 7 -s -xsmall  /home/abaranova/hw/hw3/gen.fna
    ```
    
    ```bash
