@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Interspersed Repeat Landscape</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Divergence');
+          data.addRows([
+          ['0', ],
+          ['1', ],
+          ['2', ],
+          ['3', ],
+          ['4', ],
+          ['5', ],
+          ['6', ],
+          ['7', ],
+          ['8', ],
+          ['9', ],
+          ['10', ],
+          ['11', ],
+          ['12', ],
+          ['13', ],
+          ['14', ],
+          ['15', ],
+          ['16', ],
+          ['17', ],
+          ['18', ],
+          ['19', ],
+          ['20', ],
+          ['21', ],
+          ['22', ],
+          ['23', ],
+          ['24', ],
+          ['25', ],
+          ['26', ],
+          ['27', ],
+          ['28', ],
+          ['29', ],
+          ['30', ],
+          ['31', ],
+          ['32', ],
+          ['33', ],
+          ['34', ],
+          ['35', ],
+          ['36', ],
+          ['37', ],
+          ['38', ],
+          ['39', ],
+          ['40', ],
+          ['41', ],
+          ['42', ],
+          ['43', ],
+          ['44', ],
+          ['45', ],
+          ['46', ],
+          ['47', ],
+          ['48', ],
+          ['49', ],
+          ['50', ],
+        ]);
+          var pieData = new google.visualization.DataTable();
+          pieData.addColumn('string', 'class');
+          pieData.addColumn('number', 'bp');
+          pieData.addRows([
+         ['Simple_repeat', 1974593],
+              ['Unmasked',29606542],
+        ]);
+        var pieOptions = {
+          legend: 'none',
+          title: 'Genome Fraction',
+          slices: {0: { color: "#FFFF66" }, 1: { color: "black" }} 
+        };
+        var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
+        pieChart.draw(pieData, pieOptions);
+        var options = {
+          animation: {duration: 10},
+          title: 'Interspersed Repeat Landscape',
+          hAxis: {title: 'Kimura substitution level (CpG adjusted)', showTextEvery: 5},
+          vAxis: {title: 'percent of genome'},
+          isStacked: 1,
+          colors: []
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+      </script>
+    </head>
+    <body bgcolor="#ffffff" text="#000000" link="#525d76">
+    <font size="+3">Interspersed Repeat Landscape</font>
+   <hr noshade="noshade" size="1">
+   <div id="outer" style="width:9999px">
+   <div id="chart_div" style="width: 1000px; height: 600px;float:left"></div>
+   <div id="pie_chart_div" style="width: 500px; height: 600px;float:left"></div>
+   </div>
+   <p>&#169; RepeatMasker.org</p>  
+   </body>
+</html>
