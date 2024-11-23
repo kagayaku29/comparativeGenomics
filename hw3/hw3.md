@@ -62,7 +62,8 @@ JupiterPlot использовался для визуализации хром�
      calcDivergenceFromAlign.pl -s divsum /home/abaranova/hw/hw3/gen.fna.align
      createRepeatLandscape.pl -div divsum -g 31581135 > divsum.html
    ```
-   
+     ![kimure pai](https://github.com/kagayaku29/comparativeGenomics/blob/main/hw3/pai.jpg)
+
 
 
 
